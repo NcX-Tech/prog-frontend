@@ -1,22 +1,13 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import { Profile} from "@/components/Profile"
+import { Profile } from "@/components/Profile";
 
 export default function Home() {
   return (
-    <div className="container">
-      <div className="rectangle">
-        <h1 className="title">
-          Olá, teste
-        </h1>
-        <section>
-        <Profile /> 
+    <div className={styles.page}>
+      <main className={styles.main}>
+        <h1 className={styles.title}>Programação Front-End</h1>
         <Profile />
-        <Profile />
-        <Profile />
-        </section>
-       
-      </div>
+      </main>
     </div>
   );
 }
